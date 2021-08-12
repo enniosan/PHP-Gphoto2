@@ -1,0 +1,195 @@
+:root{
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+html, body{
+    background-color: #444;
+    color:#FFF;
+    
+    border: 0px;
+    padding: 0px;
+    margin:0px;
+
+    overflow-y: hidden;
+    height: 100vh;
+
+}
+
+#appContainer{
+    
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+
+#goFS{ /*display:none*/ }
+
+#infoCamera{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 85vh;
+}
+
+#debug{
+    width: 100%;
+    height: 15vh;
+
+    background-color: #111;
+    color: #0c0;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0px;
+    margin:0px;
+    padding:0px;
+
+    overflow-y: scroll;
+
+}
+
+
+button{
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    border: 2px solid #FFF;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+#intro{
+    height: 90vh;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+
+    width: 100%;
+    place-items: center center;
+
+}
+
+#app{
+    display:none;
+}
+
+
+#secchio{
+    width:1px;height: 1px; border:0px none;
+}
+
+
+
+.funzione{
+    display: grid;
+    grid-template-rows: 80px 1fr 60px;
+    place-items: start center;
+
+    background-color:#555;
+}
+
+.funzione:nth-child(odd){
+    
+    background-color:#666;
+}
+
+
+
+.opzioni{
+    
+    width:100%;
+    height: 100%;
+    
+    
+
+    text-align:center;
+}
+
+.titolo{
+    width:100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+
+    background-color: #369;
+}
+
+.tasto{
+    background-color: #FFF;
+    color: #444;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 0.3rem solid coral;
+    padding: 3px;
+    margin: 1rem;
+}
+
+
+.optionBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 90vw;
+    margin: 3vw;
+    place-self: center center;
+    box-shadow: 2px 5px 10px #000;
+
+    gap: 1rem;
+
+    padding: 2vw;
+
+    border-radius: 1rem;
+
+    background-color: #666;
+
+}
+
+.optionBox input{
+    
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    outline: none;
+
+}
+
+
+.elencoFile{
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1rem;
+
+    place-items: start center;
+
+}
+
+.schedaImg{
+
+    width: 100%;
+
+    display:grid;
+    grid-template-rows: 1fr auto auto;
+    background-color:#FFF;
+    border-radius: 1rem;
+    gap: 0.3rem;
+
+    place-items: center center
+}
+
+.schedaImg img{
+    
+    width:100%;
+}
+
+.schedaImg .nome{color: #444;}
